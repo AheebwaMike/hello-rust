@@ -16,7 +16,7 @@ fn main() {
 
     // Important: You won’t just know which traits to use and which methods and 
     // functions to call from a crate (library). Always look up the
-    // documentation provided by the crate's documentatation.
+    // instructions provided by the crate's documentatation.
     // That said, this line uses the thread_rng function to create a random
     // number generator, which has a method gen_range that takes a range
     // expression.
@@ -86,6 +86,7 @@ fn main() {
                 Ordering::Equal => {
                     println!("\n\t\t--------------------------------");
                     println!("\t\tYour chances are over. You lose!");
+                println!("\t\tThe number was {secret_number}");
                     println!("\t\t--------------------------------\n");
                     break
                 },
