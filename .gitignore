@@ -1,5 +1,9 @@
 */target/
-
+kata/easy/target/
+kata/medium/target/
+kata/hard/target/
+kata/complex/target/
+*.exe
 rustlings/
 
    
