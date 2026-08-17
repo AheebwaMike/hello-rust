@@ -5,5 +5,6 @@ kata/hard/target/
 kata/complex/target/
 *.exe
 rustlings/
+kata/easy/src/bin/casuals.rs
 
    
