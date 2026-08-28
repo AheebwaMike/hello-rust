@@ -10,7 +10,17 @@ get_middle("A") -> "A"
 
 */
 
+fn middle_char(word: &str) -> &str {
+    if word.len() % 2 == 0 {
+        word
+    } else {
+        word
+    }
+}
+
+
 
 fn main() {
-    
+    let result = middle_char("hellos");
+    println!("Resut: {:?}", result);
 }
