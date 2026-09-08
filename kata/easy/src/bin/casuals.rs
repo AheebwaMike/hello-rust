@@ -1,5 +1,7 @@
 fn main() {
-    let c = "Hello".chars();
+    let s = String::from("Hello");
+    let reference = &s;
 
-    println!("{f}")
+    println!("The reference is {reference}");
+    println!("The reference is still valid: {reference}");
 }

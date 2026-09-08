@@ -3,6 +3,8 @@ kata/easy/target/
 kata/medium/target/
 kata/hard/target/
 kata/complex/target/
+programs/library-manager/target/
+programs/guessing-game/target/
 *.exe
 rustlings/
 rustlings/*
