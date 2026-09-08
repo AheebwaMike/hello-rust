@@ -9,5 +9,6 @@ programs/guessing-game/target/
 rustlings/
 rustlings/*
 kata/easy/src/bin/casuals.rs
+practice/
 
    
