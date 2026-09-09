@@ -4,98 +4,119 @@
 [![Edition](https://img.shields.io/badge/Edition-2024-blue)](https://doc.rust-lang.org/edition-guide/)
 [![Status](https://img.shields.io/badge/Status-Active_Learning-green)](https://github.com/)
 
-A structured personal repository dedicated to learning and mastering the Rust programming language, ranging from fundamental language semantics to algorithmic challenges and CLI applications.
+A personal Rust learning workspace covering fundamentals, practice projects, algorithmic exercises, and guided study material.
 
 ---
 
-## Repository Overview
-
-This workspace is organized modularly to capture exercises, self-contained mini-projects, and algorithmic problem-solving:
+## Repository Structure
 
 ```text
 .
-|-- 001_guessing_game/    # Interactive CLI number guessing game
-|-- hello, rust/          # Exploratory playground for core syntax & mutability
-|-- kata/                 # Problem-solving exercises grouped by difficulty
-|   |-- easy/             # Basic algorithms and manipulation tasks
-|   |-- medium/           # Intermediate data structures & algorithms
-|   |-- hard/             # Complex logic and performance challenges
-|   `-- complex/          # Advanced multi-concept problem sets
-`-- rustlings/            # Official Rustlings exercises and solutions
+|-- README.md                  # Project overview and notes
+|-- hello, rust/              # Main playground for Rust basics and experiments
+|-- kata/                      # Coding challenge folders by difficulty
+|   |-- easy/                  # Beginner-level tasks
+|   |-- medium/                # Intermediate practice problems
+|   |-- hard/                  # More advanced challenge work
+|   |-- complex/               # Broader multi-step problem sets
+|   `-- README.md              # Kata instructions and notes
+|-- muscle-up/                # Notes and focused learning material
+|-- practice/                 # General Rust practice and small prototypes
+|-- programs/                 # Small standalone applications
+|   |-- guessing-game/         # Number guessing CLI game
+|   `-- library-manager/       # Simple library management project
+|-- rustlings/                # Rustlings exercises and solutions
+|   |-- exercises/            # Exercise prompts
+|   |-- solutions/            # Completed solutions
+|   |-- Cargo.toml            # Workspace manifest
+|   `-- rust-analyzer.toml    # Rust Analyzer config
+`-- .gitignore                # Git ignore rules
 ```
 
 ---
 
-## Projects & Modules
+## Project Areas
 
 ### 1. hello, rust
-* Location: `hello, rust/`
-* Focus: Language fundamentals, variable binding, mutability, data types, and terminal formatting.
+Location: `hello, rust/`
 
-### 2. 001_guessing_game
-* Location: `001_guessing_game/`
-* Focus: Interactive CLI game implementing:
-  * Standard I/O handling (`std::io::stdin`, `std::io::stdout`)
-  * Random number generation with the `rand` crate
-  * Control flow, loops, and pattern matching (`match`, `Ordering`)
+This is the main learning sandbox for core Rust concepts such as:
+- Variables and mutability
+- Functions and control flow
+- Ownership and borrowing basics
+- String and type handling
+- Small experiments and syntax practice
 
-### 3. Kata (Coding Challenges)
-* Location: `kata/`
-* Focus: Algorithmic problem solving across multiple difficulty tiers:
-  * `easy/src/bin/fibonacci.rs` - Fibonacci sequence calculation
-  * `easy/src/bin/temperature_converter.rs` - Celsius / Fahrenheit temperature conversion
-  * `easy/src/bin/square_every_digit.rs` - Digit parsing and numeric manipulation
-  * `easy/src/bin/what_is_the_biggest_number.rs` - Array traversal and value comparison
-  * `easy/src/bin/middle_character.rs` - String slicing and inspection
+### 2. kata
+Location: `kata/`
 
-### 4. Rustlings Exercises
-* Location: `rustlings/`
-* Focus: Small directed exercises for reading and writing Rust code, covering:
-  * Variables, Functions, Control Flow, and Primitive Types
-  * Ownership, References, and Move Semantics
-  * Structs, Enums, Options, and Pattern Matching
-  * Error Handling, Generics, Traits, and Lifetimes
-  * Iterators, Smart Pointers, Concurrency, and Macros
+Challenge work sorted by difficulty:
+- `easy/` for beginner tasks
+- `medium/` for intermediate problems
+- `hard/` for deeper algorithmic work
+- `complex/` for more advanced combined concepts
+
+### 3. practice
+Location: `practice/`
+
+A place for focused Rust exercises and quick prototype code outside the main learning modules.
+
+### 4. programs
+Location: `programs/`
+
+Standalone mini-projects:
+- `guessing-game/` — CLI guessing game using input and comparison logic
+- `library-manager/` — small application/project for managing basic library-style data
+
+### 5. rustlings
+Location: `rustlings/`
+
+This contains the Rustlings curriculum with:
+- guided exercises in `exercises/`
+- reference solutions in `solutions/`
+- workspace-level configuration for the course
+
+### 6. muscle-up
+Location: `muscle-up/`
+
+This folder is used for notes, study material, and deeper learning documents related to Rust concepts and development practice.
 
 ---
 
-## Getting Started
+## Typical Commands
 
-### Prerequisites
-* Rust toolchain (Rust 2024 edition or latest stable)
-* Cargo package manager
-
-To install Rust on your system:
-```powershell
-winget install Rustlang.Rustup
-```
-Or follow instructions at [rustup.rs](https://rustup.rs).
-
-### Running Projects
-
-#### Run Hello Rust
+### Run the main playground
 ```bash
 cd "hello, rust"
 cargo run
 ```
 
-#### Run Guessing Game
+### Run a practice project
 ```bash
-cd 001_guessing_game
+cd practice
 cargo run
 ```
 
-#### Run Specific Kata Binaries
+### Run a program project
 ```bash
-cd kata/easy
-cargo run --bin fibonacci
-cargo run --bin temperature_converter
-cargo run --bin square_every_digit
-cargo run --bin what_is_the_biggest_number
-cargo run --bin middle_character
+cd programs/guessing-game
+cargo run
 ```
 
-#### Run Rustlings Exercises
+or
+
+```bash
+cd programs/library-manager
+cargo run
+```
+
+### Run Rustlings
+```bash
+cd rustlings
+cargo run
+```
+
+If the repository is configured for the `rustlings` CLI, you can also use:
 ```bash
 cd rustlings
 rustlings watch
@@ -103,15 +124,22 @@ rustlings watch
 
 ---
 
-## Learning Goals & Topics Covered
+## Learning Focus
 
-- [x] Basic syntax, variables, mutability, and data types
-- [x] Standard I/O and external crate integration (`rand`)
-- [x] String manipulation, parsing, and formatting
-- [x] Control flow and pattern matching
-- [ ] Memory safety, ownership, and borrowing
-- [ ] Structs, Enums, and Option/Result error handling
-- [ ] Traits, Generics, and Lifetimes
-- [ ] Iterators and Closures
-- [ ] Concurrency and Multithreading
-- [ ] Unsafe Rust and Advanced Macros
+Current topics in this workspace include:
+- [x] Basic Rust syntax
+- [x] Variables, functions, and flow control
+- [x] Data types and string usage
+- [x] Small CLI projects
+- [x] Coding challenge solving
+- [ ] Ownership, borrowing, and lifetimes
+- [ ] Structs, enums, and errors
+- [ ] Traits and generics
+- [ ] Iterators and smart pointers
+- [ ] Concurrency and advanced Rust patterns
+
+---
+
+## Notes
+
+This repository is intentionally organized as a flexible learning workspace rather than a single app. Each folder is meant to hold a different kind of Rust practice, from small experiments to structured exercises and mini-projects.
