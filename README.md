@@ -1,10 +1,8 @@
 # Rust Learning Journey
 
 [![Language](https://img.shields.io/badge/Language-Rust-orange?logo=rust&logoColor=white)](https://www.rust-lang.org/)
-[![Edition](https://img.shields.io/badge/Edition-2024-blue)](https://doc.rust-lang.org/edition-guide/)
-[![Status](https://img.shields.io/badge/Status-Active_Learning-green)](https://github.com/)
 
-A personal Rust learning workspace covering fundamentals, practice projects, algorithmic exercises, and guided study material.
+A personal workspace for learning Rust through small experiments, kata-style problems, and standalone mini-projects.
 
 ---
 
@@ -12,74 +10,62 @@ A personal Rust learning workspace covering fundamentals, practice projects, alg
 
 ```text
 .
-|-- README.md                  # Project overview and notes
-|-- hello, rust/              # Main playground for Rust basics and experiments
-|-- kata/                      # Coding challenge folders by difficulty
-|   |-- easy/                  # Beginner-level tasks
-|   |-- medium/                # Intermediate practice problems
-|   |-- hard/                  # More advanced challenge work
-|   |-- complex/               # Broader multi-step problem sets
-|   `-- README.md              # Kata instructions and notes
-|-- muscle-up/                # Notes and focused learning material
-|-- practice/                 # General Rust practice and small prototypes
-|-- programs/                 # Small standalone applications
-|   |-- guessing-game/         # Number guessing CLI game
-|   `-- library-manager/       # Simple library management project
-|-- rustlings/                # Rustlings exercises and solutions
-|   |-- exercises/            # Exercise prompts
-|   |-- solutions/            # Completed solutions
-|   |-- Cargo.toml            # Workspace manifest
-|   `-- rust-analyzer.toml    # Rust Analyzer config
-`-- .gitignore                # Git ignore rules
+|-- README.md                 # Repository overview and notes
+|-- .gitignore                # Ignored build output and local-only folders
+|-- hello, rust/             # Main Rust learning sandbox
+|-- kata/                     # Challenge folders grouped by difficulty
+|   |-- README.md             # Kata notes and guidance
+|   |-- easy/                 # Beginner exercises
+|   |-- medium/               # Intermediate exercises
+|   |-- hard/                 # More advanced exercises
+|   `-- complex/              # Multi-step challenge work
+|-- muscle-up/               # Notes and deeper study material
+|-- programs/                # Small standalone applications
+|   |-- guessing-game/        # Number guessing CLI game
+|   |-- library-manager/      # Library-style data management app
+|   |-- rpn-calculator/       # Reverse Polish notation calculator
+|   `-- shape-metrics/        # Geometry/shape calculation exercises
+`-- .gitignore                # Root ignore rules
 ```
+
+> Note: This repository intentionally excludes generated target directories and local-only folders listed in the root .gitignore.
 
 ---
 
 ## Project Areas
 
-### 1. hello, rust
+### hello, rust
 Location: `hello, rust/`
 
-This is the main learning sandbox for core Rust concepts such as:
-- Variables and mutability
-- Functions and control flow
-- Ownership and borrowing basics
-- String and type handling
-- Small experiments and syntax practice
+This is the main playground for experimenting with core Rust concepts, including:
+- variables and mutability
+- functions and control flow
+- ownership and borrowing basics
+- strings and simple type usage
+- small syntax and implementation experiments
 
-### 2. kata
+### kata
 Location: `kata/`
 
-Challenge work sorted by difficulty:
+A challenge workspace split by difficulty:
 - `easy/` for beginner tasks
 - `medium/` for intermediate problems
-- `hard/` for deeper algorithmic work
-- `complex/` for more advanced combined concepts
+- `hard/` for more advanced work
+- `complex/` for broader multi-step exercises
 
-### 3. practice
-Location: `practice/`
-
-A place for focused Rust exercises and quick prototype code outside the main learning modules.
-
-### 4. programs
+### programs
 Location: `programs/`
 
-Standalone mini-projects:
-- `guessing-game/` — CLI guessing game using input and comparison logic
-- `library-manager/` — small application/project for managing basic library-style data
+Standalone mini-projects and small applications:
+- `guessing-game/` — CLI guessing game
+- `library-manager/` — basic library manager
+- `rpn-calculator/` — expression evaluator using RPN
+- `shape-metrics/` — shape-based calculations
 
-### 5. rustlings
-Location: `rustlings/`
-
-This contains the Rustlings curriculum with:
-- guided exercises in `exercises/`
-- reference solutions in `solutions/`
-- workspace-level configuration for the course
-
-### 6. muscle-up
+### muscle-up
 Location: `muscle-up/`
 
-This folder is used for notes, study material, and deeper learning documents related to Rust concepts and development practice.
+This folder contains notes and focused study material for deeper Rust concepts and practice.
 
 ---
 
@@ -91,55 +77,41 @@ cd "hello, rust"
 cargo run
 ```
 
-### Run a practice project
-```bash
-cd practice
-cargo run
-```
-
-### Run a program project
+### Run a small program
 ```bash
 cd programs/guessing-game
 cargo run
 ```
 
-or
-
+### Run another project
 ```bash
 cd programs/library-manager
 cargo run
 ```
 
-### Run Rustlings
+### Run a calculator project
 ```bash
-cd rustlings
+cd programs/rpn-calculator
 cargo run
-```
-
-If the repository is configured for the `rustlings` CLI, you can also use:
-```bash
-cd rustlings
-rustlings watch
 ```
 
 ---
 
 ## Learning Focus
 
-Current topics in this workspace include:
+Current learning goals in this workspace include:
 - [x] Basic Rust syntax
 - [x] Variables, functions, and flow control
-- [x] Data types and string usage
-- [x] Small CLI projects
-- [x] Coding challenge solving
-- [ ] Ownership, borrowing, and lifetimes
-- [ ] Structs, enums, and errors
+- [x] Small CLI and console projects
+- [x] Kata-style practice problems
+- [ ] Ownership and borrowing
+- [ ] Structs, enums, and error handling
 - [ ] Traits and generics
 - [ ] Iterators and smart pointers
-- [ ] Concurrency and advanced Rust patterns
+- [ ] Concurrency and advanced patterns
 
 ---
 
 ## Notes
 
-This repository is intentionally organized as a flexible learning workspace rather than a single app. Each folder is meant to hold a different kind of Rust practice, from small experiments to structured exercises and mini-projects.
+This repository is organized as a flexible Rust learning workspace rather than a single application. Each tracked folder serves a different purpose: experimentation, challenge solving, notes, or compact standalone programs.
