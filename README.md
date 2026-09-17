@@ -104,7 +104,7 @@ Current learning goals in this workspace include:
 - [x] Variables, functions, and flow control
 - [x] Small CLI and console projects
 - [x] Kata-style practice problems
-- [ ] Ownership and borrowing
+- [x] Ownership and borrowing
 - [ ] Structs, enums, and error handling
 - [ ] Traits and generics
 - [ ] Iterators and smart pointers
