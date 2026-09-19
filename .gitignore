@@ -11,4 +11,10 @@ rustlings/*
 kata/easy/src/bin/casuals.rs
 practice/
 
-   
+
+
+   # mdBook generated output
+docs/book/
+
+# mdBook serve lock
+docs/.mdbook-serve.lock
