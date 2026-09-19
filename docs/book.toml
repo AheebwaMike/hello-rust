@@ -6,7 +6,7 @@ language = "en"
 src = "src"
 
 [output.html]
-default-theme = "navy"
+default-theme = "light"
 preferred-dark-theme = "navy"
 git-repository-url = "https://github.com/AheebwaMike/hello-rust"
 edit-url-template = "https://github.com/AheebwaMike/hello-rust/edit/main/docs/src/{path}"
