@@ -13,22 +13,13 @@ A personal workspace for learning Rust through small experiments, kata-style pro
 |-- README.md                 # Repository overview and notes
 |-- .gitignore                # Ignored build output and local-only folders
 |-- hello, rust/             # Main Rust learning sandbox
-|-- kata/                     # Challenge folders grouped by difficulty
-|   |-- README.md             # Kata notes and guidance
-|   |-- easy/                 # Beginner exercises
-|   |-- medium/               # Intermediate exercises
-|   |-- hard/                 # More advanced exercises
-|   `-- complex/              # Multi-step challenge work
+|-- kata/                     # Growing collection of exercises and challenge work
 |-- muscle-up/               # Notes and deeper study material
-|-- programs/                # Small standalone applications
-|   |-- guessing-game/        # Number guessing CLI game
-|   |-- library-manager/      # Library-style data management app
-|   |-- rpn-calculator/       # Reverse Polish notation calculator
-|   `-- shape-metrics/        # Geometry/shape calculation exercises
+|-- programs/                # Small standalone apps and experiments; more can be added over time
 `-- .gitignore                # Root ignore rules
 ```
 
-> Note: This repository intentionally excludes generated target directories and local-only folders listed in the root .gitignore.
+> Note: This repository intentionally excludes generated target directories and local-only folders listed in the root .gitignore. Several sections are intentionally kept broad so they can keep growing naturally as new Rust work is added.
 
 ---
 
@@ -47,20 +38,12 @@ This is the main playground for experimenting with core Rust concepts, including
 ### kata
 Location: `kata/`
 
-A challenge workspace split by difficulty:
-- `easy/` for beginner tasks
-- `medium/` for intermediate problems
-- `hard/` for more advanced work
-- `complex/` for broader multi-step exercises
+A growing collection of Rust exercises and challenge work. The folder is organized by difficulty and continues to expand as more kata and experiments are added.
 
 ### programs
 Location: `programs/`
 
-Standalone mini-projects and small applications:
-- `guessing-game/` — CLI guessing game
-- `library-manager/` — basic library manager
-- `rpn-calculator/` — expression evaluator using RPN
-- `shape-metrics/` — shape-based calculations
+This area is for standalone mini-projects and small applications. It is intentionally open-ended, so more projects can be added over time as the learning journey grows.
 
 ### muscle-up
 Location: `muscle-up/`
