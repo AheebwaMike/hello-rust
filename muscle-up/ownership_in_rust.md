@@ -363,3 +363,5 @@ This takes a mutable reference explicitly, mutates in place, and there's no over
 
 ---
 *Good luck — if you score well here you've genuinely internalized the hardest conceptual chapter in early Rust. The borrow checker only gets more nuanced (lifetimes proper, `Rc`/`RefCell`, interior mutability) from here, but this chapter is the foundation everything else stands on.*
+
+> Enjoy
