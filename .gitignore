@@ -5,15 +5,13 @@ kata/hard/target/
 kata/complex/target/
 programs/library-manager/target/
 programs/guessing-game/target/
-*.exe
+*.exe  
 rustlings/
 rustlings/*
 kata/easy/src/bin/casuals.rs
 practice/
 
-
-
-   # mdBook generated output
+# mdBook generated output
 docs/book/
 
 # mdBook serve lock
